@@ -4,161 +4,304 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Omar Mazhoud — Développeur Fullstack</title>
+  <meta name="description" content="Portfolio d'Omar Mazhoud, développeur full-stack spécialisé en Spring Boot, React, Angular, Symfony, et plus.">
+  <meta name="keywords" content="Omar Mazhoud, développeur, portfolio, fullstack, spring boot, react, angular, symfony, python">
+  <meta name="author" content="Omar Mazhoud">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Background Effects -->
+  <div class="bg-grid"></div>
+  <div class="bg-gradient bg-gradient-1"></div>
+  <div class="bg-gradient bg-gradient-2"></div>
 
-  <header class="navbar">
-    <div class="container nav-inner">
-      <div class="brand">
-        <h1>Omar Mazhoud</h1>
-        <p class="subtitle">Développeur Fullstack</p>
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <div class="nav-inner">
+        <div class="brand" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          OM
+        </div>
+        
+        <div class="nav-links" id="navLinks">
+          <a href="#about">À propos</a>
+          <a href="#projects">Projets</a>
+          <a href="#skills">Compétences</a>
+          <a href="#contact">Contact</a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+          ☰
+        </button>
       </div>
-
-      <nav class="nav-links" id="navLinks">
-        <a href="#about">À propos</a>
-        <a href="#projects">Projets</a>
-        <a href="#skills">Compétences</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
-        ☰
-      </button>
     </div>
-  </header>
+  </nav>
 
-  <main>
-    <!-- HERO -->
-    <section class="hero" id="home">
-      <div class="container hero-grid">
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
         <div class="hero-left">
-          <h2>Salut, je suis <span class="accent">Omar Mazhoud</span></h2>
-          <p class="lead">Étudiant &amp; développeur fullstack — je crée des applications web et mobiles performantes et des interfaces soignées.</p>
+          <div class="hero-badge">
+            <span>Disponible pour des projets</span>
+          </div>
+          
+          <h1>
+            Salut, je suis<br>
+            <span class="gradient-text">Omar Mazhoud</span>
+          </h1>
+          
+          <p class="hero-description">
+            Étudiant & développeur fullstack passionné par la création d'applications web et mobiles performantes avec des interfaces modernes et soignées.
+          </p>
+          
           <div class="hero-actions">
-            <a class="btn" href="#projects">Voir mes projets</a>
-            <a class="btn ghost" href="#contact">Me contacter</a>
+            <a href="#projects" class="btn btn-primary">
+              Voir mes projets
+              <span>→</span>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Me contacter
+            </a>
+            <a href="cv (4).pdf" download class="btn btn-secondary">
+              <span>📄</span>
+              Télécharger CV
+            </a>
           </div>
         </div>
 
         <div class="hero-right">
-          <!-- Remplace photo.jpg par ta photo -->
-          <img src="zargaa.jfif" alt="Photo Omar Mazhoud" class="profile-img">
-          <div class="profile-card">
-            <h3>Omar Mazhoud</h3>
-            <p>Développeur Fullstack</p>
+          <div class="profile-card-3d">
+            <div class="profile-glow"></div>
+            <div class="profile-container">
+              <div class="profile-img-wrapper">
+                <img src="zargaa.jfif" alt="Omar Mazhoud" class="profile-img">
+              </div>
+              
+              <div class="profile-info">
+                <h3>Omar Mazhoud</h3>
+                <p>Développeur Fullstack</p>
+              </div>
+
+              <div class="profile-stats">
+                <div class="stat">
+                  <span class="stat-value">3+</span>
+                  <span class="stat-label">Projets</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">9+</span>
+                  <span class="stat-label">Technologies</span>
+                </div>
+                <div class="stat">
+                  <span class="stat-value">100%</span>
+                  <span class="stat-label">Passion</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section fade-in">
-      <div class="container">
-        <h2>À propos de moi</h2>
-        <p class="center">Je suis étudiant et développeur fullstack. J'aime concevoir et développer des solutions complètes : backend robuste, front agréable, et applications mobiles fonctionnelles. Je m’intéresse particulièrement à la conception UI/UX et à la création d’outils utiles pour les professionnels (ex : gestion de rendez-vous pour médecins).</p>
+  <!-- About Section -->
+  <section id="about" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">À propos</span>
+        <h2 class="section-title">Qui suis-je ?</h2>
+        <p class="section-description">
+          Je suis étudiant et développeur fullstack passionné par la création de solutions complètes. 
+          Du backend robuste au frontend élégant, en passant par les applications mobiles, 
+          je m'investis dans chaque aspect du développement. Je porte une attention particulière 
+          à l'UI/UX et à la création d'outils qui facilitent le quotidien des professionnels.
+        </p>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section fade-in">
-      <div class="container">
-        <h2>Projets récents</h2>
-        <div class="projects-grid">
-          <article class="project-card">
-            <div class="project-head">
-              <h3>Bibliothèque — Symfony</h3>
-              <span class="tag">Backend • PHP • Symfony</span>
-            </div>
-            <p>Application de gestion de bibliothèque avec authentification, gestion des emprunts et interface d'administration.</p>
-            <div class="project-links">
-              <!-- Remplace par ton lien si tu as -->
-              <a href="https://github.com/Omarmazhoud/projet-symfony" class="link" target="_blank" rel="noopener">Voir le repo</a>
-            </div>
-          </article>
+  <!-- Projects Section -->
+  <section id="projects" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Portfolio</span>
+        <h2 class="section-title">Projets récents</h2>
+        <p class="section-description">
+          Découvrez mes dernières réalisations en développement web et mobile
+        </p>
+      </div>
 
-          <article class="project-card">
-            <div class="project-head">
-              <h3>Bibliothèque — Spring Boot + Angular</h3>
-              <span class="tag">Java • Spring Boot • Angular</span>
-            </div>
-            <p>Architecture fullstack : API REST en Spring Boot + front Angular pour la gestion avancée des livres et utilisateurs.</p>
-            <div class="project-links">
-              <a href="https://github.com/Omarmazhoud/gestion_livres" class="link" target="_blank" rel="noopener">Voir le repo</a>
-            </div>
-          </article>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon">📚</div>
+          <div class="project-header">
+            <h3>Bibliothèque Symfony</h3>
+          </div>
+          <div class="project-tags">
+            <span class="tag">PHP</span>
+            <span class="tag">Symfony</span>
+            <span class="tag">Backend</span>
+          </div>
+          <p class="project-description">
+            Application complète de gestion de bibliothèque avec authentification sécurisée, 
+            système d'emprunts et interface d'administration intuitive.
+          </p>
+          <a href="https://github.com/Omarmazhoud/projet-symfony" class="project-link" target="_blank" rel="noopener">
+            Voir le projet →
+          </a>
+        </article>
 
-          <article class="project-card">
-            <div class="project-head">
-              <h3>App de gestion de RDV — React Native</h3>
-              <span class="tag">React Native • Figma • UX</span>
-            </div>
-            <p>Application mobile pour la gestion des rendez-vous pour un médecin — maquette sur Figma et prototype fonctionnel en React Native.</p>
-            <div class="project-links">
-              <a href="https://github.com/Omarmazhoud/gestion-de-rendez-vous" class="link" target="_blank" rel="noopener">voir le repo</a>
-            </div>
-          </article>
+        <article class="project-card">
+          <div class="project-icon">🚀</div>
+          <div class="project-header">
+            <h3>Bibliothèque Full Stack</h3>
+          </div>
+          <div class="project-tags">
+            <span class="tag">Spring Boot</span>
+            <span class="tag">Angular</span>
+            <span class="tag">REST API</span>
+          </div>
+          <p class="project-description">
+            Architecture fullstack moderne avec API REST en Spring Boot et interface dynamique 
+            en Angular pour une gestion avancée des livres et utilisateurs.
+          </p>
+          <a href="https://github.com/Omarmazhoud/gestion_livres" class="project-link" target="_blank" rel="noopener">
+            Voir le projet →
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">📱</div>
+          <div class="project-header">
+            <h3>App Gestion RDV</h3>
+          </div>
+          <div class="project-tags">
+            <span class="tag">React Native</span>
+            <span class="tag">Figma</span>
+            <span class="tag">UI/UX</span>
+          </div>
+          <p class="project-description">
+            Application mobile moderne pour la gestion des rendez-vous médicaux. 
+            Design sur Figma et développement complet en React Native.
+          </p>
+          <a href="https://github.com/Omarmazhoud/gestion-de-rendez-vous" class="project-link" target="_blank" rel="noopener">
+            Voir le projet →
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Compétences</span>
+        <h2 class="section-title">Technologies maîtrisées</h2>
+        <p class="section-description">
+          Les outils et technologies que j'utilise pour donner vie aux projets
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">🍃</div>
+          <div class="skill-name">Spring Boot</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">⚛️</div>
+          <div class="skill-name">React</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🅰️</div>
+          <div class="skill-name">Angular</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎵</div>
+          <div class="skill-name">Symfony</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🐍</div>
+          <div class="skill-name">Python</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">💾</div>
+          <div class="skill-name">SQL / NoSQL</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🔧</div>
+          <div class="skill-name">Git / GitHub</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">🎨</div>
+          <div class="skill-name">Figma</div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">✨</div>
+          <div class="skill-name">UI / UX</div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section fade-in">
-      <div class="container">
-        <h2>Compétences</h2>
-        <div class="skills-grid">
-          <div class="skill">Spring Boot</div>
-          <div class="skill">React</div>
-          <div class="skill">Angular</div>
-          <div class="skill">Symfony</div>
-          <div class="skill">Python</div>
-          <div class="skill">SQL / NoSQL</div>
-          <div class="skill">Git / GitHub</div>
-          <div class="skill">Figma</div>
-          <div class="skill">UI / UX</div>
-        </div>
+  <!-- Contact Section -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Contact</span>
+        <h2 class="section-title">Restons en contact</h2>
+        <p class="section-description">
+          N'hésitez pas à me contacter pour discuter de vos projets ou opportunités
+        </p>
       </div>
-    </section>
 
-    <!-- CONTACT -->
-    <section id="contact" class="section fade-in">
-      <div class="container">
-        <h2>Contact</h2>
-        <p class="center">Tu peux me contacter ou visiter mes profils :</p>
+      <div class="contact-grid">
+        <a href="mailto:omar.mazhoud.2004@gmail.com" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">Email</div>
+            <div class="contact-value">omar.mazhoud.2004@gmail.com</div>
+          </div>
+        </a>
 
-        <div class="contact-links">
-          <a class="contact-card" href="mailto:ton.email@example.com" target="_blank" rel="noopener">
-            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email">
-            <div>
-              <div class="small">Email</div>
-              <div class="bold">omar.mazhoud.2004@gmail.com</div>
-            </div>
-          </a>
+        <a href="https://www.linkedin.com/in/omar-mazhoud-ab648a290/" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">Omar Mazhoud</div>
+          </div>
+        </a>
 
-          <a class="contact-card" href="https://www.linkedin.com/in/omar-mazhoud-ab648a290/" target="_blank" rel="noopener">
-            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin">
-            <div>
-              <div class="small">LinkedIn</div>
-              <div class="bold">linkedin.com/in/omar mazhoud</div>
-            </div>
-          </a>
-
-          <a class="contact-card" href="https://github.com/omarmazhoud" target="_blank" rel="noopener">
-            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="github">
-            <div>
-              <div class="small">GitHub</div>
-              <div class="bold">github.com/omar mazhoud</div>
-            </div>
-          </a>
-        </div>
+        <a href="https://github.com/omarmazhoud" class="contact-card" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="white">
+              <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+          </div>
+          <div class="contact-info">
+            <div class="contact-label">GitHub</div>
+            <div class="contact-value">@omarmazhoud</div>
+          </div>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-  </main>
-
+  <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>© <span id="year"></span> Omar Mazhoud — Développeur Fullstack</p>
+      <div class="footer-content">
+        <p>© <span id="year"></span> Omar Mazhoud — Développeur Fullstack</p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">Conçu avec passion ✨</p>
+      </div>
     </div>
   </footer>
 
