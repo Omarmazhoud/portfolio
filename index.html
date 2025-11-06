@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Omar Mazhoud — Développeur Fullstack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="brand">
+        <h1>Omar Mazhoud</h1>
+        <p class="subtitle">Développeur Fullstack</p>
+      </div>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">À propos</a>
+        <a href="#projects">Projets</a>
+        <a href="#skills">Compétences</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Salut, je suis <span class="accent">Omar Mazhoud</span></h2>
+          <p class="lead">Étudiant &amp; développeur fullstack — je crée des applications web et mobiles performantes et des interfaces soignées.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#projects">Voir mes projets</a>
+            <a class="btn ghost" href="#contact">Me contacter</a>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <!-- Remplace photo.jpg par ta photo -->
+          <img src="zargaa.jfif" alt="Photo Omar Mazhoud" class="profile-img">
+          <div class="profile-card">
+            <h3>Omar Mazhoud</h3>
+            <p>Développeur Fullstack</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2>À propos de moi</h2>
+        <p class="center">Je suis étudiant et développeur fullstack. J'aime concevoir et développer des solutions complètes : backend robuste, front agréable, et applications mobiles fonctionnelles. Je m’intéresse particulièrement à la conception UI/UX et à la création d’outils utiles pour les professionnels (ex : gestion de rendez-vous pour médecins).</p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section fade-in">
+      <div class="container">
+        <h2>Projets récents</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Bibliothèque — Symfony</h3>
+              <span class="tag">Backend • PHP • Symfony</span>
+            </div>
+            <p>Application de gestion de bibliothèque avec authentification, gestion des emprunts et interface d'administration.</p>
+            <div class="project-links">
+              <!-- Remplace par ton lien si tu as -->
+              <a href="https://github.com/Omarmazhoud/projet-symfony" class="link" target="_blank" rel="noopener">Voir le repo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-head">
+              <h3>Bibliothèque — Spring Boot + Angular</h3>
+              <span class="tag">Java • Spring Boot • Angular</span>
+            </div>
+            <p>Architecture fullstack : API REST en Spring Boot + front Angular pour la gestion avancée des livres et utilisateurs.</p>
+            <div class="project-links">
+              <a href="https://github.com/Omarmazhoud/gestion_livres" class="link" target="_blank" rel="noopener">Voir le repo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-head">
+              <h3>App de gestion de RDV — React Native</h3>
+              <span class="tag">React Native • Figma • UX</span>
+            </div>
+            <p>Application mobile pour la gestion des rendez-vous pour un médecin — maquette sur Figma et prototype fonctionnel en React Native.</p>
+            <div class="project-links">
+              <a href="https://github.com/Omarmazhoud/gestion-de-rendez-vous" class="link" target="_blank" rel="noopener">voir le repo</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section fade-in">
+      <div class="container">
+        <h2>Compétences</h2>
+        <div class="skills-grid">
+          <div class="skill">Spring Boot</div>
+          <div class="skill">React</div>
+          <div class="skill">Angular</div>
+          <div class="skill">Symfony</div>
+          <div class="skill">Python</div>
+          <div class="skill">SQL / NoSQL</div>
+          <div class="skill">Git / GitHub</div>
+          <div class="skill">Figma</div>
+          <div class="skill">UI / UX</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section fade-in">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="center">Tu peux me contacter ou visiter mes profils :</p>
+
+        <div class="contact-links">
+          <a class="contact-card" href="mailto:ton.email@example.com" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="email">
+            <div>
+              <div class="small">Email</div>
+              <div class="bold">omar.mazhoud.2004@gmail.com</div>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://www.linkedin.com/in/omar-mazhoud-ab648a290/" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="linkedin">
+            <div>
+              <div class="small">LinkedIn</div>
+              <div class="bold">linkedin.com/in/omar mazhoud</div>
+            </div>
+          </a>
+
+          <a class="contact-card" href="https://github.com/omarmazhoud" target="_blank" rel="noopener">
+            <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="github">
+            <div>
+              <div class="small">GitHub</div>
+              <div class="bold">github.com/omar mazhoud</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Omar Mazhoud — Développeur Fullstack</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
